@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import BtnInfo from './btn/BtnInfo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="text-center sm:text-left">
+    <Btn/>
+  </div>
   );
+}
+
+function Btn(){
+  return(
+      <div className="container mx-auto mt-12">
+        <h1 className="text-2xl text-blue-700 font-bold mb-3">Awesome Button</h1>
+        <BtnInfo/>
+        <button className="bg-green-500 hover:bg-green-700 text-white transition duration-150 cursor-pointer py-2 px-8 ml-2 mt-2 rounded">Another Cool Buttons</button>
+    </div>
+  )
 }
 
 export default App;
