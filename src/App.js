@@ -26,19 +26,19 @@ function TableItem(){
     <div className="container mx-auto mt-12">
        <h1 className="text-2xl text-blue-700 font-bold mb-3">Mysterious Card</h1>
        <div className="grid grid-cols-4 grid-rows-2 gap-4">
-         <div className="col-span-2 row-span-2">
+         <div className="sm:col-span-4 md:col-span-2">
             <CardTable/>
          </div>
-         <div className="col-span-1 row-span-1">
+         <div className="sm:col-span-4 md:col-span-2">
             <CardTable/>
          </div>
-         <div className="col-span-1 row-span-1">
+         <div className="sm:col-span-4 md:col-span-2">
             <CardTable/>
          </div>
-         <div className="col-span-1 row-span-1">
+         <div className="sm:col-span-4 md:col-span-2">
             <CardTable/>
          </div>
-         <div className="col-span-1 row-span-1">
+         <div className="sm:col-span-4 md:col-span-2">
            <CardTable/>
          </div>
        </div>
@@ -58,5 +58,6 @@ function CardTable(){
     </div>
   )
 }
+
 
 export default App;
